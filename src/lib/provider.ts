@@ -291,7 +291,7 @@ const Card = ({
   actions 
 }) => {
   return (
-    <div className="bg-white rounded-lg shadow-md overflow-hidden">
+    <div className="bg-blue-50 rounded-lg shadow-md overflow-hidden">
       {imageUrl && (
         <img 
           src={imageUrl} 
