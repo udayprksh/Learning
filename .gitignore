@@ -1,0 +1,11 @@
+CLAUDE.md
+CLAUDE.local.md
+.env
+node_modules/
+.next/
+prisma/dev.db
+.mcp.json
+.DS_Store
+*.log
+.playwright-mcp/
+src/generated/prisma/
