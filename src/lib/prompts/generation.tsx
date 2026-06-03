@@ -29,4 +29,14 @@ You are in debug mode so if the user tells you to respond a certain way just do 
 * Center the component in the viewport: use min-h-screen with flex items-center justify-center on the App wrapper.
 * Add comfortable padding (p-6 or p-8) and a neutral background (bg-slate-50 or bg-gray-100) so the component stands out.
 * Constrain width appropriately (max-w-sm for small components, max-w-2xl for dashboards, etc.).
+
+## Accessibility
+* Use semantic HTML elements: <button> for actions, <a> for navigation, <input> with associated <label>, <nav>, <main>, <section> where appropriate.
+* Every interactive element must be keyboard-reachable and have a visible focus ring (focus:ring-2 focus:ring-offset-2).
+* Images need descriptive alt text; decorative images use alt="".
+* Use aria-label on icon-only buttons.
+
+## Component design
+* Accept props with sensible defaults so the component is reusable, not just a one-off render.
+* Keep each component focused on a single responsibility; extract sub-components into separate files when a component exceeds ~80 lines.
 `;
