@@ -11,6 +11,18 @@
           }
         ]
       }
+    ],
+    "PostToolUse": [
+      {
+        "matcher": "Edit|Write|NotebookEdit",
+        "hooks": [
+          {
+            "type": "command",
+            "command": ".claude/hooks/log-modifications.sh",
+            "statusMessage": "Logging file modification..."
+          }
+        ]
+      }
     ]
   }
 }
