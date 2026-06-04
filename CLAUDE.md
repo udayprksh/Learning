@@ -99,6 +99,7 @@ Two hooks are active in `.claude/settings.json` (committed, applies to all colla
 
 - **`protect-env.sh`** (PreToolUse on `Read|Bash`) — blocks any read or shell command targeting `.env*`, `*.pem`, `*.key`, `*.p12` files.
 - **`log-modifications.sh`** (PostToolUse on `Edit|Write|NotebookEdit`) — appends a log entry to `.claude/logs/modifications.log` for every file Claude modifies, including filename, line number, and a diff-style preview.
+- **`typecheck.sh`** (PostToolUse on `Edit|Write`) — runs `tsc --noEmit` after every `.ts`/`.tsx` edit. Type errors are fed back to Claude so they are fixed before the task completes. Uses the incremental cache from `tsconfig.json` for speed.
 
 `.claude/settings.local.json` is for personal overrides (e.g. MCP permissions) and should not be committed.
 
