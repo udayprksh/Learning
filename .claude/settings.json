@@ -22,6 +22,16 @@
             "statusMessage": "Logging file modification..."
           }
         ]
+      },
+      {
+        "matcher": "Edit|Write",
+        "hooks": [
+          {
+            "type": "command",
+            "command": ".claude/hooks/typecheck.sh",
+            "statusMessage": "Running TypeScript type check..."
+          }
+        ]
       }
     ]
   }
