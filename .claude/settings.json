@@ -32,6 +32,16 @@
             "statusMessage": "Running TypeScript type check..."
           }
         ]
+      },
+      {
+        "matcher": "Edit|Write",
+        "hooks": [
+          {
+            "type": "command",
+            "command": ".claude/hooks/code-review.sh",
+            "statusMessage": "Running code review on edited file..."
+          }
+        ]
       }
     ]
   }
